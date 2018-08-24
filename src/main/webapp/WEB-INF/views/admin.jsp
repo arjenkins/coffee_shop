@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="/style.css"/>
 <head>
 <meta charset="UTF-8">
-<title>Welcome to The Coffee Shop</title>
+<title>Administration Page</title>
 </head>
 <nav class="navbar navbar-default">
   <div class="container-fluid">
@@ -26,32 +26,8 @@
   </div>
 </nav>
 <body>
-
-<div class="container-fluid">
-<h1>Welcome to the Coffee Shop!</h1>
-<h1><img src="/images/images.jpeg"/></h1>
-</div>
-
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
-<div align="center">
-<p>Join our customer rewards program by creating a profile.</p>
-<p>It's quick and easy, plus you get a free cup of coffee on your next visit!</p>
-<a class="btn btn-primary" href="/coffeeshop-form" role="button">Register</a>
-</div>
-
-<br>
-<br>
-<br>
-<br>
-<br>
-	<div class="container">
-		<h1>Items for Sale</h1>
+<div class="container">
+		<h1>Administration Panel</h1>
 		<table class="table">
 			<thread>
 				<tr>
@@ -65,20 +41,13 @@
 					<td>${item.description}</td>
 					<td>${item.quantity }</td>
 					<td>${item.price }</td>
+					<td><a href="/edit-item/${ item.id }" >Edit Item</a></td>
+					<td><a href="/delete-item/${ item.id }"onclick="return confirm('Are you sure?')">Delete Item </a></td>
 				</tr>
 				</c:forEach>
 			</tbody>	
 </table>
 </div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<a class="btn btn-primary" href="/add-item" role="button">Add New Item</a>
 </body>
 </html>

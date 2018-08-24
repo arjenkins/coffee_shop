@@ -3,9 +3,10 @@ h1{
 	font-family: cursive;
 	text-align: center;
 }
-h1 <img{
-	height: 1em;
-	border-radius: 50%;
+h1 img{
+	/* height: 1em; */
+	border-radius: 60px;
+	
 	
 }
 body{
@@ -16,4 +17,10 @@ h2{
 }
 p{
 	font-family: Verdana;
+}
+table{
+	text-align: center;
+}
+th{
+	text-align: center;
 }
